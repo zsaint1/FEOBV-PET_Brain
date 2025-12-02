@@ -310,7 +310,7 @@ analyze_pbet_function () {
 ################ REGISTRATIONS + PROJECTION
 
 	if [[ ! -f "${Lin__FWD_transforms_Final}" ]]; then
-		############# STEP 0:  Affine registration				TEST sampling?
+		############# STEP 0:  Affine registration
 		echo -e "\n\n\e[33;1m *******  ${subj}  -->  STAGE 0:  LINEAR (Affine) REGISTRATION \e[0m"
 		antsRegistration \
 			--dimensionality 3 \
@@ -519,7 +519,10 @@ analyze_pbet_function () {
 
 
 ######## Motion correction function
-## MC is done in 2 pass. First pass to obtain second pass template. Second pass is performed on raw PET data. Motion correction with lowest final frame-wise displacement is kept as final motion-correction and summed into a static image.
+## MC is done in 2 pass:
+## First pass to obtain second pass template;
+## Second pass is performed on raw PET data.
+## Motion correction with lowest final frame-wise displacement is kept as final motion-correction and summed into a static image.
 
 motion_correction_function () {
 
