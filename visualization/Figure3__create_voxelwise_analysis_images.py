@@ -25,17 +25,17 @@ voxelwise_GLMs = {
 		'folder': f'GLMfit__18patients-33controls--FINALITY-nLin_precise_SUVR-in-MNI-2mm__contrast_g2v0_sm8_output___permutations_10000-abs--vwthr1.3/contrast_g2v0',
 		'label': 'Group_diff',
 		'vmin': -5,
-		'vmax': -0.00001,
+		'vmax': -1.3,
 		'cmap': 'Blues_r',
-		'ticks': [-5.0, -2.5, 0.0]
+		'ticks': [-5.0, -1.3, 0.0]
 	},
 	'CANTAB': {
 		'folder': f'GLMfit__18patients-CANTAB--FINALITY-nLin_precise_SUVR-in-MNI-2mm__contrast_g1v1_slope_sm8_output___permutations_10000-abs--vwthr1.3/contrast_g1v1_slope',
 		'label': 'CANTAB',
-		'vmin': 0.00001,
+		'vmin': 1.3,
 		'vmax': 5,
 		'cmap': 'Reds',
-		'ticks': [0, 2.5, 5.0]
+		'ticks': [0, 1.3, 5.0]
 	}
 }
 

@@ -790,7 +790,7 @@ creating_brainmask_and_stripping__function () {
 	###
 	if [[ ! -f "${PET_dir}/ANAT_T1.nii.gz" ]]; then
 		echo "======================================================================================================="
-		echo -e " \e[33;1m ${subj} --> Creating final anatomical (T1) brainmask by brain recon-all segmentations. \e[0m"
+		echo -e " \e[33;1m ${subj} --> Creating final stripped anatomical T1 for registration purposes. \e[0m"
 		echo "======================================================================================================="
 		echo ""
 			fslmaths ${PET_dir}/antsdn.brain.nii.gz \
